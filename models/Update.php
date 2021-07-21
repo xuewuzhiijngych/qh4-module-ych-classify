@@ -68,9 +68,6 @@ class Update extends ClassifyModel
      */
     public function run()
     {
-        // 查询的字段
-        $fields = ['id', 'name', 'banner', 'icon', 'pid', 'url', 'sort', 'status'];
-
         $db = $this->external->getDb();
         $table_name = $this->external->TableName();
 
