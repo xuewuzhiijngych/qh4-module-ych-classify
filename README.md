@@ -5,6 +5,7 @@ QH4框架扩展模块-无限极分类模块
 1、无限极分类模块，商品分类.....
 
 ### 助手方法
+
 ```php
  /**
      * 获取所有子集
@@ -76,6 +77,7 @@ QH4框架扩展模块-无限极分类模块
 ```php
     /**
      * 新增
+     * 必选字段 name  pid  sort  status
      * @return array
      */
     public function actionCreate()
@@ -84,12 +86,22 @@ QH4框架扩展模块-无限极分类模块
 ```
 
 ```php
+     /**
+     * 更新
+     * 必选字段 id name  pid  sort  status
+     * @return array
+     */
     public function actionUpdate()
     {
     }
 ```
 
 ```php
+    /**
+     * 删除
+     * 必选字段 id
+     * @return array
+     */
     public function actionDelete()
     {
     }
